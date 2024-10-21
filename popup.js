@@ -6,7 +6,6 @@ if (!navigator.mediaDevices || !window.MediaRecorder) {
     alert('MediaRecorder is not supported in your browser.'); 
 }
 
-// Start recording when button is clicked
 document.getElementById('startRecordingBtn').addEventListener('click', function() {
     navigator.mediaDevices.getUserMedia({ audio: true })
         .then(stream => {
@@ -42,7 +41,6 @@ document.getElementById('stopRecordingBtn').addEventListener('click', function()
     document.getElementById('startRecordingBtn').style.display = 'block';
 });
 
-// Function to send audio to the Hugging Face API for transcription
 function convertAudioToText(audioData) {
     const apiUrl = 'https://api-inference.huggingface.co/models/openai/whisper-large-v3'; // Updated API URL
     const headers = {

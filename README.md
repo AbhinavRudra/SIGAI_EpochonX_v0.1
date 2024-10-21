@@ -25,3 +25,4 @@ EchoScribe is a web application that enhances productivity by allowing users to 
 - **jsPDF**: For PDF generation.
 
 ## Future improvements
+- **Chrome Extension**: to add a Chrome extension for quick access and use directly from the browser.

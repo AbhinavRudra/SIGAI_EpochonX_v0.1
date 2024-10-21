@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Add this line -->
+</head> 
+<body> 
+    <h1>EchoScribe</h1> 
+    <button id="startRecordingBtn">Start Recording</button> 
+    <button id="stopRecordingBtn" style="display:none;">Stop Recording</button>
+    <div id="outputText"></div>
+    <button id="summarizeBtn" style="display:none;">Summarize</button> 
+    <button id="downloadPdfBtn" style="display:none;">Download Summary as PDF</button> 
+    <div id="summary"></div> 
+    <script src="popup.js"></script> 
+</body> 
+</html>
